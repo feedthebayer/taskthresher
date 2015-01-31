@@ -6,7 +6,11 @@
       <span class="first">Task</span><span class="second">Thresher</span>
     </h1>
     <nav>
-      <a href="#" class="sign-in">Sign In</a>
+      <% if signed_in? %>
+        <%= link_to 'Sign Out', sign_out_path, class: "sign-in", method: :delete %>
+      <% else %>
+        <%= link_to 'Sign In', sign_in_path, class: "sign-in" %>
+      <% end %>
     </nav>
   </section>
 </header>
