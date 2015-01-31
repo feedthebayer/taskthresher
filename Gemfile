@@ -2,12 +2,12 @@ source 'https://rubygems.org'
 
 group :production do
   gem 'rails_12factor'
+  gem 'newrelic_rpm'
 end
 
 group :development do
   gem 'spring'
   gem 'sqlite3'
-  gem 'newrelic_rpm'
 end
 
 ruby '2.1.2'
