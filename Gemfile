@@ -7,6 +7,7 @@ end
 group :development do
   gem 'spring'
   gem 'sqlite3'
+  gem 'newrelic_rpm'
 end
 
 ruby '2.1.2'
