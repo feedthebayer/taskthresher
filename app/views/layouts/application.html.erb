@@ -18,6 +18,21 @@
 
   <body>
 
+    <header id="header-wrapper">
+      <section class="content">
+        <h1 class="logo">
+          <span class="first">Task</span><span class="second">Thresher</span>
+        </h1>
+        <nav>
+          <% if signed_in? %>
+            <%= link_to 'Sign Out', sign_out_path, method: :delete %>
+          <% else %>
+            <%= link_to 'Sign In', sign_in_path %>
+          <% end %>
+        </nav>
+      </section>
+    </header>
+
     <%= yield %>
 
   </body>
