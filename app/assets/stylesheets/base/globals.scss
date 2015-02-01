@@ -1,0 +1,13 @@
+h1.logo {
+  color: $dark-blue;
+  letter-spacing: -0.02em;
+
+  span.first {
+    font-weight: 700;
+  }
+
+  span.second {
+    font-style: italic;
+    font-weight: 600;
+  }
+}

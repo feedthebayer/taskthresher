@@ -1,0 +1,149 @@
+a.register {
+  @include button($button-lrg, $primary-color, $global-radius);
+  color: $dark-blue;
+  font-weight: 700;
+  letter-spacing: +0.02em;
+  text-transform: uppercase;
+
+  &:hover, &:focus {
+    color: $dark-blue;
+  }
+}
+
+#header-wrapper {
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  .content {
+    margin: 0 auto;
+    max-width: 960px;
+
+    h1.logo {
+      float: left;
+      font-size: 2em;
+
+      @media #{$small-only} {
+        margin-top: 0.25em;
+      }
+
+      @media #{$medium-up} {
+        font-size: 2.5em;
+      }
+    }
+
+    nav {
+      float: right;
+      margin-top: 0.6em;
+
+      a {
+        @include button($button-tny, $secondary-color, $global-radius);
+        font-weight: 700;
+        letter-spacing: +0.02em;
+        text-transform: uppercase;
+
+        &:hover, &:focus {
+          color: $light-green;
+        }
+      }
+    }
+
+  }
+}
+
+#hero-wrapper {
+  background: $light-green;
+  padding: 8em 0 3.5em;
+
+  @media #{$medium-up} {
+    padding: 12em 0 3.5em;
+  }
+
+  .content {
+    @include grid-column(12);
+    text-align: center;
+
+    h1, h2 {
+      font-weight: 300;
+    }
+
+    h1 {
+      color: rgba(255,255,255,0.95);
+      font-size: 3.5em;
+      letter-spacing: -0.03em;
+      padding-bottom: 1em;
+    }
+
+    h2 {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.8em;
+      font-style: italic;
+      padding-bottom: 1.5em;
+    }
+  }
+}
+
+
+#belief-wrapper {
+  text-align: center;
+  padding: 5em 0 1em;
+
+  h1 {
+    @include grid-column(12);
+    margin-bottom: 1em;
+  }
+
+  .content {
+    padding-bottom: 2em;
+
+    p {
+      margin: 0 0.2em;
+    }
+  }
+}
+
+#app-wrapper {
+  text-align: center;
+
+  .content {
+    @include grid-column(12);
+
+    h2 {
+      margin: 2.5em 0;
+    }
+
+    h1.logo {
+      font-size: 3em;
+
+      @media #{$medium-up} {
+        font-size: 6em;
+      }
+
+      @media #{$large-up} {
+        font-size: 10em;
+      }
+    }
+  }
+}
+
+#cta-wrapper {
+  text-align: center;
+  padding: 5em 0;
+
+  .content {
+    @include grid-column(12);
+  }
+}
+
+#footer-wrapper {
+  text-align: center;
+  padding: 4em 0;
+  background: $dark-blue;
+  color: rgba(255,255,255,0.80);
+
+  .content {
+    @include grid-column(12);
+  }
+}

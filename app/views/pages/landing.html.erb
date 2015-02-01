@@ -7,9 +7,9 @@
     </h1>
     <nav>
       <% if signed_in? %>
-        <%= link_to 'Sign Out', sign_out_path, class: "sign-in", method: :delete %>
+        <%= link_to 'Sign Out', sign_out_path, method: :delete %>
       <% else %>
-        <%= link_to 'Sign In', sign_in_path, class: "sign-in" %>
+        <%= link_to 'Sign In', sign_in_path %>
       <% end %>
     </nav>
   </section>
@@ -24,7 +24,7 @@
   </div>
   <div class="row">
     <div class="content">
-      <a href="#" class="register">Register for Free!</a>
+      <%= link_to 'Register for free!', register_path, class: "register" %>
     </div>
   </div>
 </section>
@@ -64,7 +64,7 @@
 <section id="cta-wrapper">
   <div class="row">
     <section class="content">
-      <a href="#" class="register">Register for Free!</a>
+      <%= link_to 'Register for free!', register_path, class: "register" %>
     </section>
   </div>
 </section>
