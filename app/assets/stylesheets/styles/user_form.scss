@@ -1,0 +1,33 @@
+
+#user-form {
+  padding-top: 6em;
+
+  header.content {
+    @include grid-column(12);
+
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 0.4em;
+      text-align: center;
+    }
+
+    @media #{$medium-up} {
+      h1 {
+        font-size: 4.5em;
+      }
+    }
+  }
+
+  form {
+    input[type=submit] {
+      margin-top: 1.5em;
+    }
+
+  }
+
+  section.reset-content {
+    @include grid-column(12);
+    text-align: center;
+  }
+}
+

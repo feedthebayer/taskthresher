@@ -1,15 +1,17 @@
-<div id="clearance" class="sign-up">
-  <h2><%= t('.title') %></h2>
-
-  <%= form_for @user do |form| %>
-    <%= render partial: '/users/form', object: form %>
-
-    <div class="submit-field">
-      <%= form.submit %>
-    </div>
-
-    <div class="other-links">
-      <%= link_to t('.sign_in'), sign_in_path %>
-    </div>
-  <% end %>
-</div>
+<section id="user-form">
+  <div class="row">
+    <header class="content">
+      <h1>Free Registration</h1>
+    </header>
+  </div>
+  <div class="row">
+    <%= form_for @user do |form| %>
+      <%= render partial: '/users/form', object: form %>
+      <div class="row">
+        <div class="small-11 medium-7 large-5 small-centered columns">
+          <%= form.submit "Register", class: "register button expand" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

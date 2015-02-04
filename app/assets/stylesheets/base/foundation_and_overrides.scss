@@ -95,34 +95,37 @@ $font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Ar
 // We use these to define default font weights
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
+$font-weight-bold: bold !default;
 
-// $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
-// $black       : #000000;
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
 
 $light-green: #18bc9c;
 $dark-blue: #2c3e50;
+$orange: #EFC84A;
+$faded-white: rgba(255,255,255,0.95);
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $primary-color: #E27C3E;
-$primary-color: #EFC84A;
+$primary-color: $orange;
 // $secondary-color: #e7e7e7;
 $secondary-color: $dark-blue;
 // $alert-color: #f04124;
@@ -132,6 +135,7 @@ $secondary-color: $dark-blue;
 
 // We use these to control various global styles
 // $body-bg: $white;
+$body-bg: $light-green;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -148,6 +152,7 @@ $secondary-color: $dark-blue;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
+$global-radius: 4px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -206,6 +211,7 @@ $secondary-color: $dark-blue;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
+$header-font-color: $faded-white;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -449,7 +455,7 @@ $button-font-tny: rem-calc(14);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
+$button-font-weight: 700;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -625,22 +631,32 @@ $button-function-factor: -25%;
 
 // We use this to set the base for lots of form spacing and positioning styles
 // $form-spacing: rem-calc(16);
+$form-spacing: rem-calc(20);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
 // $form-label-font-size: rem-calc(14);
+$form-label-font-size: rem-calc(20);
 // $form-label-font-weight: $font-weight-normal;
+$form-label-font-weight: $font-weight-bold;
 // $form-label-line-height: 1.5;
+$form-label-line-height: 2;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
+$form-label-font-color: $dark-blue;
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
+$input-font-color: $dark-blue;
 // $input-font-size: rem-calc(14);
+$input-font-size: $form-label-font-size;
 // $input-bg-color: $white;
+$input-bg-color: scale-color($white, $lightness: -5%);
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
+$input-focus-bg-color: $white;
 // $input-border-color: scale-color($white, $lightness: -20%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
+$input-focus-border-color: $dark-blue;
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-border-radius: $global-radius;

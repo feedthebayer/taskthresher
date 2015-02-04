@@ -1,13 +1,5 @@
-a.register {
-  @include button($button-lrg, $primary-color, $global-radius);
-  color: $dark-blue;
-  font-weight: 700;
-  letter-spacing: +0.02em;
-  text-transform: uppercase;
-
-  &:hover, &:focus {
-    color: $dark-blue;
-  }
+main#landing-page {
+  background-color: #FFF;
 }
 
 #hero-wrapper {
@@ -27,7 +19,7 @@ a.register {
     }
 
     h1 {
-      color: rgba(255,255,255,0.95);
+      color: $faded-white;
       font-size: 3.5em;
       letter-spacing: -0.03em;
       padding-bottom: 1em;
@@ -49,6 +41,7 @@ a.register {
 
   h1 {
     @include grid-column(12);
+    color: $dark-blue;
     margin-bottom: 1em;
   }
 
@@ -68,6 +61,7 @@ a.register {
     @include grid-column(12);
 
     h2 {
+      color: $dark-blue;
       margin: 2.5em 0;
     }
 

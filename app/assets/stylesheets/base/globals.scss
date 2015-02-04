@@ -2,6 +2,11 @@ h1.logo {
   color: $dark-blue;
   letter-spacing: -0.02em;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   span.first {
     font-weight: 700;
   }
@@ -12,12 +17,34 @@ h1.logo {
   }
 }
 
+.register, input.register  {
+  @include button($button-lrg, $primary-color, $global-radius);
+  color: $dark-blue;
+  letter-spacing: +0.02em;
+  text-transform: uppercase;
+
+  &:hover, &:focus {
+    color: $dark-blue;
+  }
+}
+
+.button.secondary {
+  @include button($button-lrg, $secondary-color, $global-radius);
+  text-transform: uppercase;
+  letter-spacing: +0.02em;
+
+  &:hover, &:focus {
+    color: $light-green;
+  }
+}
+
 #header-wrapper {
   color: #FFF;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
+  padding: 0 1em;
 
   .content {
     margin: 0 auto;
@@ -25,7 +52,7 @@ h1.logo {
 
     h1.logo {
       float: left;
-      font-size: 2em;
+      font-size: 1.8em;
 
       @media #{$small-only} {
         margin-top: 0.25em;
@@ -40,14 +67,24 @@ h1.logo {
       float: right;
       margin-top: 0.6em;
 
-      a {
+      a, input[type=submit] {
         @include button($button-tny, $secondary-color, $global-radius);
-        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: +0.02em;
+
+        &:hover, &:focus {
+          color: $light-green;
+        }
+      }
+
+      a.register {
+        @include button($button-tny, $primary-color, $global-radius);
+        color: $dark-blue;
         letter-spacing: +0.02em;
         text-transform: uppercase;
 
         &:hover, &:focus {
-          color: $light-green;
+          color: $dark-blue;
         }
       }
     }

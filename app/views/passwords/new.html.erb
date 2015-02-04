@@ -1,16 +1,23 @@
-<div id="clearance" class="password-reset">
-  <h2><%= t '.title' %></h2>
+<section id="user-form">
+  <div class="row">
+    <header class="content">
+      <h1>Reset Your Password</h1>
+    </header>
+  </div>
+  <div class="row">
+    <%= form_for :password, url: passwords_path do |form| %>
+      <div class="row">
+        <div class="small-11 medium-7 large-5 small-centered columns">
+          <%= form.label :email %>
+          <%= form.text_field :email, type: 'email', class: "radius" %>
+        </div>
+      </div>
 
-  <p><%= t '.description' %></p>
-
-  <%= form_for :password, url: passwords_path do |form| %>
-    <div class="text-field">
-      <%= form.label :email %>
-      <%= form.text_field :email, type: 'email' %>
-    </div>
-
-    <div class="submit-field">
-      <%= form.submit %>
-    </div>
-  <% end %>
-</div>
+      <div class="row">
+        <div class="small-11 medium-7 large-5 small-centered columns">
+          <%= form.submit "Reset password", class: "button secondary expand" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

@@ -1,9 +1,13 @@
-<div class="text-field">
-  <%= form.label :email %>
-  <%= form.text_field :email, type: 'email' %>
+<div class="row">
+  <div class="small-11 medium-7 large-5 small-centered columns">
+    <%= form.label :email %>
+    <%= form.text_field :email, type: 'email', class: "radius" %>
+  </div>
 </div>
 
-<div class="password-field">
-  <%= form.label :password %>
-  <%= form.password_field :password %>
+<div class="row">
+  <div class="small-11 medium-7 large-5 small-centered columns">
+    <%= form.label :password %>
+    <%= form.password_field :password, class: "radius" %>
+  </div>
 </div>
