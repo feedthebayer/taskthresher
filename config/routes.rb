@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  # get 'tasks/create'
+  # get 'tasks/destroy'
+  resources :tasks, only: [:create, :destroy]
+
   resources :passwords, controller: 'clearance/passwords', only: [:create, :new]
   resource :session, controller: 'clearance/sessions', only: [:create]
 
