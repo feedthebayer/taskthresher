@@ -1,3 +1,12 @@
-<div class="row" style="text-align:center">
-  <h1>This is the user page</h1>
-</div>
+<section id="task-list">
+  <div class="row">
+    <h1>Here are your tasks</h1>
+  </div>
+
+  <% @tasks.each do |task| %>
+    <div class="row">
+      <h2><%= task.description %></h2>
+      <small><%= task.created_at %></small>
+    </div>
+  <% end %>
+</section>

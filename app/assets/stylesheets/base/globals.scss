@@ -45,11 +45,10 @@ h1.logo {
   right: 0;
   left: 0;
   padding: 0 1em;
+  margin: 0 auto;
+  max-width: 960px;
 
   .content {
-    margin: 0 auto;
-    max-width: 960px;
-
     h1.logo {
       float: left;
       font-size: 1.8em;
@@ -88,6 +87,11 @@ h1.logo {
         }
       }
     }
+  }
 
+  #flash {
+    clear: both;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }

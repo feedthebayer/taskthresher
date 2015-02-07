@@ -25,6 +25,7 @@
             <span class="first">Task</span><span class="second">Thresher</span>
           <% end %>
         </h1>
+
         <nav>
           <% if signed_in? %>
             <%= button_to 'Sign Out', sign_out_path, method: :delete %>
@@ -34,6 +35,20 @@
             <%= link_to 'Sign In', sign_in_path %>
           <% end %>
         </nav>
+      </section>
+
+      <section id="flash">
+        <% flash.each do |name, msg| -%>
+          <% if msg.is_a?(String) %>
+            <!-- <div data&#45;alert
+            class="alert-box <%= name.to_s == 'notice' ? 'success' : 'alert' %>"> -->
+            <div data-alert
+            class="alert-box alert">
+              <%= msg %>
+              <!-- <a href="#" class="close">&#38;times;</a> -->
+            </div>
+          <% end %>
+        <% end %>
       </section>
     </header>
 
