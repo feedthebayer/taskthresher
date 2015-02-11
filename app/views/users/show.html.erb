@@ -1,18 +1,23 @@
 <section id="task-list">
   <div class="row">
-    <h1>Here are your tasks</h1>
+    <h1>Current Tasks</h1>
   </div>
 
   <% @tasks.each do |task| %>
     <div class="row">
-      <h2><%= task.description %></h2>
-      <small><%= task.created_at %></small>
+      <section class="task small-11 medium-10 large-8 small-centered columns">
+        <a href="#"><i class="checkbox"></i></a>
+        <h2><%= task.description %></h2>
+        <small><%= time_ago_in_words(task.created_at) %> ago</small>
+      </section>
     </div>
   <% end %>
 
   <div class="row">
-    <%= form_for @new_task do |form| %>
-      <%= render partial: '/tasks/form', object: form %>
-    <% end %>
+    <section class="small-11 medium-10 large-8 small-centered columns">
+      <%= form_for @new_task do |form| %>
+        <%= render partial: '/tasks/form', object: form %>
+      <% end %>
+    </section>
   </div>
 </section>

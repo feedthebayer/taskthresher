@@ -22,6 +22,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'high_voltage'
 gem 'clearance'
+gem 'font-awesome-sass'
 
 
 
