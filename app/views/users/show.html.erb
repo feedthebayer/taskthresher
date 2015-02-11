@@ -8,7 +8,9 @@
       <section class="task small-11 medium-10 large-8 small-centered columns">
         <a href="#"><i class="checkbox"></i></a>
         <h2><%= task.description %></h2>
-        <small><%= time_ago_in_words(task.created_at) %> ago</small>
+        <small>
+          <%= 7 - (Time.now - task.created_at).to_i / 1.day %> days left
+        </small>
       </section>
     </div>
   <% end %>
