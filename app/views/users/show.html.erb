@@ -6,7 +6,10 @@
   <% @tasks.each do |task| %>
     <div class="row">
       <section class="task small-11 medium-10 large-8 small-centered columns">
-        <a href="#"><i class="checkbox"></i></a>
+        <%# <%= button_to task, method: :delete do %>
+        <%= link_to task, method: :delete do %>
+          <i class="checkbox"></i>
+        <% end %>
         <h2><%= task.description %></h2>
         <small>
           <%= 7 - (Time.now - task.created_at).to_i / 1.day %> days left
@@ -15,7 +18,7 @@
     </div>
   <% end %>
 
-  <div class="row">
+  <div class="row new-task">
     <section class="small-11 medium-10 large-8 small-centered columns">
       <%= form_for @new_task do |form| %>
         <%= render partial: '/tasks/form', object: form %>
