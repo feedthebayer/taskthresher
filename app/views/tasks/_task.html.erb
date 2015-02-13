@@ -5,8 +5,6 @@
       <i class="checkbox"></i>
     <% end %>
     <h2><%= task.description %></h2>
-    <small>
-      <%= 7 - (Time.now - task.created_at).to_i / 1.day %> days left
-    </small>
+    <small><%= task.days_to_deletion %> days left</small>
   </section>
 </div>
