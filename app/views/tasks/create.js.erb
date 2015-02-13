@@ -1,0 +1,8 @@
+<% if @task.valid? %>
+  $('#tasks').append("<%=j render @task %>");
+  $('#new-task')
+    .html("<%=j render partial: 'tasks/form', locals: { task: @new_task } %>");
+<% else %>
+  $('#new-task')
+    .html("<%=j render partial: 'tasks/form', locals: { task: @task } %>");
+<% end %>

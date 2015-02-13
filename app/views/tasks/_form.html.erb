@@ -1,9 +1,14 @@
-<div class="row">
-  <div class="row collapse postfix-radius">
-    <%# <%= form.label :description, "New Task" %>
-    <%= form.text_field :description, placeholder: "New Task", class: "radius" %>
-    <%= button_tag(type: 'submit', class: "button secondary postfix") do %>
-      <i></i>
-    <% end %>
-  </div>
-</div>
+<section class="small-11 medium-10 large-8 small-centered columns">
+  <%= form_for task, remote: true do |form| %>
+    <div class="row">
+      <div class="row collapse postfix-radius">
+        <%# <%= form.label :description, "New Task" %>
+        <%= form.text_field :description, placeholder: "New Task",
+            class: "radius" %>
+        <%= button_tag(type: 'submit', class: "button secondary postfix") do %>
+          <i></i>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</section>

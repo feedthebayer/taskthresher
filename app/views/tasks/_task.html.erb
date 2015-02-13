@@ -1,0 +1,12 @@
+<div class="row">
+  <section id=<%= "task-#{task.id}" %>
+        class="task small-11 medium-10 large-8 small-centered columns">
+    <%= link_to task, method: :delete, remote: true do %>
+      <i class="checkbox"></i>
+    <% end %>
+    <h2><%= task.description %></h2>
+    <small>
+      <%= 7 - (Time.now - task.created_at).to_i / 1.day %> days left
+    </small>
+  </section>
+</div>

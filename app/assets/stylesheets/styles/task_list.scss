@@ -56,7 +56,7 @@
     }
   }
 
-  form.new-task {
+  #new-task {
     input[type=text] {
       @include grid-column(10);
       @media #{$medium-up} {
