@@ -4,16 +4,16 @@
       <h1>Sign In</h1>
     </header>
   </div>
-  <div class="row">
-    <%= form_for :session, url: session_path do |form| %>
-      <%= render partial: '/users/form', object: form %>
-      <div class="row">
-        <div class="small-11 medium-7 large-5 small-centered columns">
-          <%= form.submit "Sign In", class: "button secondary expand" %>
-        </div>
+
+  <%= form_for :session, url: session_path do |form| %>
+    <%= render partial: '/users/form', object: form %>
+    <div class="row">
+      <div class="small-12 medium-7 large-5 small-centered columns">
+        <%= form.submit "Sign In", class: "button secondary expand" %>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
+
   <div class="row">
     <section class="reset-content">
       <small>

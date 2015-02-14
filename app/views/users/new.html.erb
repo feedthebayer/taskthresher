@@ -4,14 +4,13 @@
       <h1>Free Registration</h1>
     </header>
   </div>
-  <div class="row">
-    <%= form_for @user do |form| %>
-      <%= render partial: '/users/form', object: form %>
-      <div class="row">
-        <div class="small-11 medium-7 large-5 small-centered columns">
-          <%= form.submit "Register", class: "register button expand" %>
-        </div>
+
+  <%= form_for @user do |form| %>
+    <%= render partial: '/users/form', object: form %>
+    <div class="row">
+      <div class="small-12 medium-7 large-5 small-centered columns">
+        <%= form.submit "Register", class: "register button expand" %>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </section>
