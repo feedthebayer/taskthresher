@@ -4,4 +4,6 @@ class Task < ActiveRecord::Base
   def days_left
     6 - (Time.now.to_date - created_at.to_date).to_i
   end
+
+  default_scope { order('created_at ASC') }
 end
