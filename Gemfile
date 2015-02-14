@@ -8,6 +8,7 @@ end
 group :development do
   gem 'spring'
   gem 'sqlite3'
+  gem 'whenever'
 end
 
 ruby '2.1.2'
