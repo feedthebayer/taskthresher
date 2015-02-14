@@ -57,13 +57,9 @@
     }
 
     small {
-      font-size: 0.4em;
+      font-size: 0.6em;
       font-style: italic;
       float: right;
-
-      @media #{$medium-up} {
-        font-size: 0.6em;
-      }
     }
   }
 
@@ -91,7 +87,7 @@
       @include grid-column(2);
       @media #{$medium-up} {
         @include grid-column(1);
-        height: 3.4rem;
+        height: 3.45rem;
         padding-top: 1.125rem;
         padding-left: 0;
         padding-right: 0;
