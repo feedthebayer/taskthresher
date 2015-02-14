@@ -25,6 +25,7 @@ gem 'high_voltage'
 gem 'clearance'
 gem 'font-awesome-sass'
 gem 'faker'
+gem 'figaro', '1.0'
 
 
 
