@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  before_action :require_login
   respond_to :html, :js
 
   def create
