@@ -1,10 +1,18 @@
 
 #task-list {
-  padding-top: 5em;
+  padding-top: 3em;
+
+  @media #{$medium-up} {
+    padding-top: 5em;
+  }
 
   h1 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.7rem;
+
+    @media #{$medium-up} {
+      margin-bottom: 2rem;
+    }
   }
 
   section.task {

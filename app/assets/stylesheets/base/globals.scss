@@ -71,6 +71,11 @@ h1.logo {
         text-transform: uppercase;
         letter-spacing: +0.02em;
 
+        @media #{$small-only} {
+          padding: 0.4rem 0.5rem 0.3rem;
+          font-size: 0.7rem;
+        }
+
         &:hover, &:focus {
           color: $light-green;
         }
@@ -82,6 +87,11 @@ h1.logo {
         letter-spacing: +0.02em;
         text-transform: uppercase;
 
+        @media #{$small-only} {
+          padding: 0.4rem 0.5rem 0.3rem;
+          font-size: 0.7rem;
+        }
+
         &:hover, &:focus {
           color: $dark-blue;
         }
@@ -91,7 +101,7 @@ h1.logo {
 
   #flash {
     clear: both;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
   }
 }

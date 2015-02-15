@@ -7,7 +7,7 @@ class TasksController < ApplicationController
     @new_task = Task.new
 
     if !@task.save
-      flash.now[:error] = "Oops, there was a problem saving the task"
+      flash.now[:alert] = "Oops, there was a problem saving the task"
     end
 
     respond_with(@task) do |format|
@@ -19,7 +19,7 @@ class TasksController < ApplicationController
     @task = current_user.tasks.find(params[:id])
 
     if !@task.destroy
-      flash.now[:error] = "Oops, there was a problem deleting the task"
+      flash.now[:alert] = "Oops, there was a problem deleting the task"
     end
 
     respond_with(@task) do |format|

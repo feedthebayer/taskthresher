@@ -352,6 +352,7 @@ $paragraph-font-size: 1.2rem;
 
 // We use this to control alert padding.
 // $alert-padding-top: rem-calc(14);
+$alert-padding-top: rem-calc(10);
 // $alert-padding-default-float: $alert-padding-top;
 // $alert-padding-opposite-direction: $alert-padding-top + rem-calc(10);
 // $alert-padding-bottom: $alert-padding-top;
@@ -359,6 +360,7 @@ $paragraph-font-size: 1.2rem;
 // We use these to control text style.
 // $alert-font-weight: $font-weight-normal;
 // $alert-font-size: rem-calc(13);
+$alert-font-size: rem-calc(16);
 // $alert-font-color: $white;
 // $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
 
@@ -374,11 +376,14 @@ $paragraph-font-size: 1.2rem;
 // We use these to style the close buttons
 // $alert-close-color: $oil;
 // $alert-close-top: 50%;
+$alert-close-top: 66%;
 // $alert-close-position: rem-calc(4);
 // $alert-close-font-size: rem-calc(22);
+$alert-close-font-size: rem-calc(30);
 // $alert-close-opacity: 0.3;
 // $alert-close-opacity-hover: 0.5;
 // $alert-close-padding: 9px 6px 4px;
+// $alert-close-padding: 10px 6px 4px;
 
 // We use this to control border radius
 // $alert-radius: $global-radius;
