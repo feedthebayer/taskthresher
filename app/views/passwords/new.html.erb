@@ -4,20 +4,19 @@
       <h1>Reset Your Password</h1>
     </header>
   </div>
-  <div class="row">
-    <%= form_for :password, url: passwords_path do |form| %>
-      <div class="row">
-        <div class="small-11 medium-7 large-5 small-centered columns">
-          <%= form.label :email %>
-          <%= form.text_field :email, type: 'email', class: "radius" %>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="small-11 medium-7 large-5 small-centered columns">
-          <%= form.submit "Reset password", class: "button secondary expand" %>
-        </div>
+  <%= form_for :password, url: passwords_path do |form| %>
+    <div class="row">
+      <div class="small-12 medium-7 large-5 small-centered columns">
+        <%= form.label :email %>
+        <%= form.text_field :email, type: 'email', class: "radius" %>
       </div>
-    <% end %>
-  </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 medium-7 large-5 small-centered columns">
+        <%= form.submit "Reset password", class: "button secondary expand" %>
+      </div>
+    </div>
+  <% end %>
 </section>
