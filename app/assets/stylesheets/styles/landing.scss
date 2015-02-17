@@ -75,13 +75,32 @@ main#landing-page {
       @media #{$large-up} {
         font-size: 10em;
       }
+
+      margin-bottom: 3rem;
+    }
+
+    img {
+      border: 1px solid black;
+      margin-bottom: 3rem;
+
+      @media #{$medium-up} {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  .copy {
+    @include grid-column($columns:12);
+
+    @media #{$medium-up} {
+      @include grid-column($columns:8, $center:true);
     }
   }
 }
 
 #cta-wrapper {
   text-align: center;
-  padding: 5em 0;
+  padding: 3em 0;
 
   .content {
     @include grid-column(12);
