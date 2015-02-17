@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your to-do list has become unwieldy. You need something that actually works. Meet TaskThresher, an awesome little application by Brandon Bayer.">
+    <meta name="description" content="Your to-do list has become unwieldy. You need something that actually works. Meet TaskThresher, an awesome little application by Brandon Bayer." />
+    <meta name="apple-mobile-web-app-title" content="TaskThresher" />
+    <meat name="apple-mobile-web-app-capable" content="yes" />
+    <meat name="mobile-web-app-capable" content="yes" />
 
     <title>
       <%= content_for?(:title) ? yield(:title) : "TaskThresher | Created by Brandon Bayer" %>
