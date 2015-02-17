@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Your to-do list has become unwieldy. You need something that actually works. Meet TaskThresher, an awesome little application by Brandon Bayer.">
 
-    <title><%= content_for?(:title) ? yield(:title) : "TaskThresher | Created by Brandon Bayer" %></title>
+    <title>
+      <%= content_for?(:title) ? yield(:title) : "TaskThresher | Created by Brandon Bayer" %>
+    </title>
+
+    <%= favicon_link_tag %>
+    <%= favicon_link_tag 'apple-touch-icon-iphone.png', rel: 'apple-touch-icon', type: 'image/png' %>
+    <%= favicon_link_tag 'touch-icon-ipad.png', rel: 'apple-touch-icon', type: 'image/png', sizes: "76x76" %>
+    <%= favicon_link_tag 'touch-icon-iphone-retina.png', rel: 'apple-touch-icon', type: 'image/png', sizes: "120x120" %>
+    <%= favicon_link_tag 'touch-icon-ipad-retina.png', rel: 'apple-touch-icon', type: 'image/png', sizes: "152x152" %>
 
     <script src="//use.typekit.net/stn2owb.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
